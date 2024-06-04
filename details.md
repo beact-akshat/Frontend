@@ -47,3 +47,4 @@ Develop a comprehensive analytics dashboard that enables an admin to view and in
 3. Secure payment links must be generated dynamically and ensure vendor transactions are completed securely.
 4. The content security features should effectively block all attempts to copy or scrape data from the dashboard.
 5. The entire platform should adhere to industry-standard security protocols to ensure data protection.
+https://chatgpt.com/c/0a75711a-20fe-4ab1-a8a9-59934f9d3bbc
