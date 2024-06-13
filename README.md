@@ -1,70 +1,42 @@
-# Getting Started with Create React App
+# Project Title:
+Advanced Analytics Dashboard for E-commerce Transactions
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Project Description:
+Develop a comprehensive analytics dashboard that enables an admin to view and interact with transaction data, utilize AI for demand forecasting, and securely generate payment links for pending orders. The platform must also implement rigorous security measures to prevent any form of content copying from the interface.
 
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Key Features:
+1. Transactional Data Reporting:
+- Use library to dump random but logically consistent transaction data. Libraries like faker can be combined to produce large datasets with specified details.
+- Display interactive reports that provide real-time insights into various transaction metrics such as sales volume, payment methods, and customer behavior.
+- Ensure these reports can be customized based on different parameters and time frames.
+2. AI-Powered Demand Forecasting:
+- Integrate a machine learning model to analyze historical transaction data and predict future demand for products.
+- Allow admins to view predictive analytics reports and adjust forecasting parameters to test different scenarios.
+3. Secure Payment Link Generation:
+- Implement a feature where admins can generate secure, one-time-use payment links for vendors to complete payments on pending orders.
+- Ensure all payment transactions are handled securely, adhering to PCI-DSS standards.
+4. Advanced Content Security:
+- Deploy advanced security measures to prevent copying of any dashboard content. This includes disabling:
+  - Keyboard shortcuts (e.g., Ctrl+C, Ctrl+A)
+  - Right-click context menus
+  - Drag and drop functionalities outside the browser window
+  - Browser extensions that allow scraping
+  - Preventing access to the application’s data from network tools
+- Ensure that these security features do not degrade the user experience for legitimate users.
+## Technology:
+1. Backend and Database Integration:
+- Use Node.js and Express to build secure RESTful APIs that handle data processing, user authentication, and secure payment transactions.
+- Utilize MongoDB for storing transaction data, user profiles, and analytics results efficiently, with a focus on scalability and security.
+- Data related to the below modules
+  - Product 
+  - Customer
+  - Transactions
+2. Frontend Development:
+- Develop a responsive web application using React.js with advanced data visualization capabilities using libraries like D3.js or Recharts.
+- Manage application state using Redux, particularly for handling data-heavy operations and user configurations dynamically.
+## Acceptance Criteria:
+1. The application must handle large volumes of data efficiently, providing real-time analytics with minimal latency.
+2. The demand forecasting tool should provide actionable insights with a high degree of accuracy.
+3. Secure payment links must be generated dynamically and ensure vendor transactions are completed securely.
+4. The content security features should effectively block all attempts to copy or scrape data from the dashboard.
+5. The entire platform should adhere to industry-standard security protocols to ensure data protection.
